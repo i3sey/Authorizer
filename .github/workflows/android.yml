@@ -25,5 +25,11 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: ls
-      run: cd authorizer && ls
+      run: zip -r art.zip .
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.3.3
+      with:
+        path: art.zip
+        # The desired behavior if no files are found using the provided path.
 
