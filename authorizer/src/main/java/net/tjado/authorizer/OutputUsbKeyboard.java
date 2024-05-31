@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
 public class OutputUsbKeyboard implements OutputInterface
 {
 
-    protected String devicePath = "/dev/hidg0";
+    protected String devicePath = "/dev/hidg1";
     protected FileOutputStream device;
     UsbHidKbd kbdKeyInterpreter;
 
